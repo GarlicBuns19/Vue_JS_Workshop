@@ -3,7 +3,9 @@ const app = Vue.createApp({
         // Must use return
         return {
         name: 'Ra\'ees',
-        surname: 'Benny'
+        surname: 'Benny',
+        name1: 'Jared',
+        surname1: 'Isaacs'
         }
     }
 })
