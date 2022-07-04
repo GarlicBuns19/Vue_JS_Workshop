@@ -33,10 +33,11 @@ const app = Vue.createApp({
     Name<input type="text" v-model="thing">
     Age<input type="number" v-model="age" id="age">
         <h1>{{thing}}</h1>
-        <div v-if='age' id="box1">
+        <div id="box1">
         <h2> {{age}}</h2>
         </div>
         <div id='output'>
+
         </div>
         <button v-on:click= 'ageDisplay'>Check</button>
         `,
