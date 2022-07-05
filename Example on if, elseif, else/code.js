@@ -19,7 +19,7 @@ const app = Vue.createApp({
         checkKey(key){
             this.keyboard = key.target.value
             // let Help = document.getElementById('span').innerHTML = this.U;
-            document.getElementById('output').innerHTML = key.target.value + " " + this.U
+            document.getElementById('output').innerHTML = this.U + ' ' +key.target.value.substring(0,1)
         }
     }
 });
