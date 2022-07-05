@@ -1,6 +1,5 @@
 const app = Vue.createApp({
     template: `
-       
         <input type="text" @keyup="checkKey">
         <div>
         <label id="output"><span id="span"></span>{{keyboard}}</label>
