@@ -1,6 +1,5 @@
 <template>
     <div class='products-container'>
-            <div>{{ $route.params.id }}</div>
         <div v-for="property of properties" :key="property" class:card>
         <img :src="property.image" alt="" width="200" height="100">
 
@@ -15,7 +14,7 @@ export default {
         }
     },
     mounted(){
-        fetch('http://localhost:3000/posts/properties')
+        fetch('http://localhost:3000/properties')
         .then(res => res.json())
         .then(data => this.properties = data)
     }
