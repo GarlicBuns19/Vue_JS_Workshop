@@ -16,7 +16,15 @@
         <button @click="age--">Decrease age</button>
         <div @click="changeTitle('Pies')">Change Title</div>
     </div> -->
-    <div id="app"></div>
+    <div id="app">
+        <div v-if="show">
+            <p>{{title}}-{{author}}-{{age}}</p>
+        </div>
+        <button>
+            <span>Hide Book</span>
+            <span>Show Book</span>
+        </button>
+    </div>
     <!-- Vue JS -->
     <script src="https://unpkg.com/vue@next"></script>
     <!-- My JS -->
