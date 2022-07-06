@@ -14,6 +14,10 @@ const app = Vue.createApp({
     //     // this.title = 'The Last Dog'
     //     this.title = title
     // }
+    toggleShow(){
+        // this.show = false
+        this.show = !this.show
+    }
   }
 })
 

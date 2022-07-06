@@ -20,10 +20,19 @@
         <div v-if="show">
             <p>{{title}}-{{author}}-{{age}}</p>
         </div>
-        <button>
-            <span>Hide Book</span>
-            <span>Show Book</span>
+        <button @click="toggleShow">
+            <span v-if="show">Hide Book</span>
+            <!-- <span v-if="!show">Show Book</span> -->
+            <span v-else>Show Book</span>
         </button>
+
+        <!-- V show using css display block and display hidden -->
+        <div v-show="show">
+            Currently showing books
+        </div>
+        <div v-show="!show">
+            Currently Not books
+        </div>
     </div>
     <!-- Vue JS -->
     <script src="https://unpkg.com/vue@next"></script>
