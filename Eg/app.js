@@ -7,7 +7,13 @@ const app = Vue.createApp({
         author: 'Sam Jack',
         age: 45
     }
+  },
+  methods:{
+    changeTitle(title){
+        // this.title = 'The Last Dog'
+        this.title = title
+    }
   }
-});
+})
 
 app.mount("#app");
