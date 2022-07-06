@@ -4,7 +4,7 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/properties">Properties</router-link> |
     <!-- <router-link to="/properties/:id">Single Property</router-link> | -->
-    <router-link to="/admin">Admin</router-link>
+    <router-link :to="{name: 'admin'}">Admin</router-link>
   </nav>
   <router-view/>
 </template>
