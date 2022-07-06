@@ -11,7 +11,9 @@
 <body>
     <h1>Hello Vue</h1>
     <div id="app">
-
+        <!-- Hard coding -->
+        <p>{{title}}-{{author}}-{{age}}</p>
+        <button v-on:click="age++">Increase age</button>
     </div>
     <!-- Vue JS -->
     <script src="https://unpkg.com/vue@next"></script>
