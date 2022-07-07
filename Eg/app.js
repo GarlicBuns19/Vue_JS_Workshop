@@ -17,6 +17,17 @@ const app = Vue.createApp({
     toggleShow(){
         // this.show = false
         this.show = !this.show
+    },
+    mouseOver(e){
+      console.log('U over me')
+      // Info about mouseover 
+      console.log(e)
+    },
+    mouseLeave(){
+      console.log('U leaving me')
+    },
+    doubleClick(){
+      console.log('U doubled me')
     }
   }
 })

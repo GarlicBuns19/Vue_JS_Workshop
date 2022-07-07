@@ -28,9 +28,10 @@
         </button>
 
         <br>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <!-- Mouse events -->
+        <div class="box" v-on:mouseover="mouseOver">mouseover (enter)</div>
+        <div class="box" @mouseleave="mouseLeave">mouseleave (whole element)</div>
+        <div class="box" @dblclick="doubleClick">double click</div>
         <div class="box"></div>
 
         <!-- V show using css display block and display none -->
