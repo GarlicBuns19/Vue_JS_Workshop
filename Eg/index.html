@@ -20,9 +20,17 @@
     <div id="app">
         <div v-if="show">
             <!-- <p>{{title}}-{{author}}-{{age}}</p> -->
-            <p>{{books[0].title}} {{books[0].author}} {{books[0].age}}</p>
+            <!-- Outputting List -->
+            <!-- <p>{{books[0].title}} {{books[0].author}} {{books[0].age}}</p>
             <p>{{books[1].title}} {{books[1].author}} {{books[1].age}}</p>
-            <p>{{books[2].title}} {{books[2].author}} {{books[2].age}}</p>
+            <p>{{books[2].title}} {{books[2].author}} {{books[2].age}}</p> -->
+            <ul>
+                <li v-for="libary of books">
+                    <h3>{{libary.title}}</h3>
+                    <p>{{libary.author}}</p>
+                    <p>{{libary.age}}</p>
+                </li>
+            </ul>
         </div>
         <!-- <button @click="toggleShow"> -->
         <button @click="showBooks">

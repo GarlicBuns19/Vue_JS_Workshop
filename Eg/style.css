@@ -7,3 +7,9 @@
     display: inline-block;
     border-radius: 30px;
 }
+li{
+    list-style: none;
+}
+li>h3{
+    color: pink;
+}
