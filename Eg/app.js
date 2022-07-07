@@ -18,16 +18,21 @@ const app = Vue.createApp({
         // this.show = false
         this.show = !this.show
     },
-    mouseOver(e){
+    mouseOver(o){
       console.log('U over me')
       // Info about mouseover 
-      console.log(e)
+      console.log(o)
+      console.log(o , o.type)
     },
-    mouseLeave(){
+    mouseLeave(l){
       console.log('U leaving me')
+      console.log(l)
+      console.log(l , l.type)
     },
-    doubleClick(){
+    doubleClick(dc){
       console.log('U doubled me')
+      console.log(dc)
+      console.log(dc , dc.type)
     }
   }
 })
