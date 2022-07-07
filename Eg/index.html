@@ -19,20 +19,24 @@
     </div> -->
     <div id="app">
         <div v-if="show">
-            <p>{{title}}-{{author}}-{{age}}</p>
+            <!-- <p>{{title}}-{{author}}-{{age}}</p> -->
+            <p>{{books[0].title}} {{books[0].author}} {{books[0].age}}</p>
+            <p>{{books[1].title}} {{books[1].author}} {{books[1].age}}</p>
+            <p>{{books[2].title}} {{books[2].author}} {{books[2].age}}</p>
         </div>
-        <button @click="toggleShow">
+        <!-- <button @click="toggleShow"> -->
+        <button @click="showBooks">
             <span v-if="show">Hide Book</span>
             <!-- <span v-if="!show">Show Book</span> -->
             <span v-else>Show Book</span>
         </button>
-
+<!-- 
         <br>
-        <!-- Mouse events -->
-        <div class="box" v-on:mouseover="mouseOver">mouseover (enter)</div>
+        Mouse events
+        <div class="box" v-on:mouseover="mouseOver($event,7)">mouseover (enter)</div>
         <div class="box" @mouseleave="mouseLeave">mouseleave (whole element)</div>
         <div class="box" @dblclick="doubleClick">double click</div>
-        <div class="box"></div>
+        <div class="box" v-on:mousemove="mouseMove">position x  {{ x }} y  {{ y }} z  {{ z }}</div> -->
 
         <!-- V show using css display block and display none -->
         <div v-show="show">
@@ -45,7 +49,8 @@
     <!-- Vue JS -->
     <script src="https://unpkg.com/vue@next"></script>
     <!-- My JS -->
-    <script src="./app.js"></script>
+    <!-- <script src="./scripts/app.js"></script> -->
+    <script src="./scripts/app1.js"></script>
 </body>
 
 </html>
