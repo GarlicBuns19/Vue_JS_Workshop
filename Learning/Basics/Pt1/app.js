@@ -11,10 +11,11 @@ const app = Vue.createApp({
             x: 0,
             y: 0,
             books: [
-                {title: 'hello'},
-                {title: 'Cook'},
-                {title: 'pop'}
-            ]
+                {title: 'hello', isFav : true},
+                {title: 'Cook',isFav : false},
+                {title: 'pop' ,isFav : true}
+            ],
+            url: 'https://www.takealot.com',
         }
     },
     methods:{
