@@ -9,7 +9,9 @@
 <body>
     <div id="app">
         <h1>Hello Vue ;)</h1>
-        <h2>{{title}}</h2>
+        <h2>{{title}} {{age}}</h2>
+        <button v-on:click="age++">Up</button>
+        <button @click="age--">Down</button>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
