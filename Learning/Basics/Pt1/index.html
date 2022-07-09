@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Vue</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="app">
@@ -32,6 +33,12 @@
         <div v-else>
 
         </div> -->
+
+        <!-- Mouse Events -->
+        <div class="box" @mouseover="mouseOver">Mouse On</div>
+        <div class="box" @mouseleave="mouseLeave">Mouse Leave</div>
+        <div class="box" @dblclick="mouseDouble">Mouse Double</div>
+        <div class="box" @mousemove="mousePosition">Mouse Position {{x}}  {{y}}</div>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
