@@ -41,7 +41,8 @@
         <div class="box" @mousemove="mousePosition">Mouse Position {{x}} {{y}}</div>
 
         <ul>
-            <li v-for="book of books" :class="{fav : book.isFav}"  @click="toggleFav(book)">
+            <!-- <li v-for="book of books" :class="{fav : book.isFav}"  @click="toggleFav(book)"> -->
+            <li v-for="book of filteredBooks" :class="{fav : book.isFav}"  @click="toggleFav(book)">
                 {{book.title}}
             </li>
         </ul>
