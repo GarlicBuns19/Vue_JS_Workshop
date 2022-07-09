@@ -9,7 +9,12 @@ const app = Vue.createApp({
             mLeave: 'u left me',
             double: 'x2',
             x: 0,
-            y: 0
+            y: 0,
+            books: [
+                {title: 'hello'},
+                {title: 'Cook'},
+                {title: 'pop'}
+            ]
         }
     },
     methods:{
