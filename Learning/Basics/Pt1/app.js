@@ -38,6 +38,9 @@ const app = Vue.createApp({
         },
         mouseDouble(){
             console.log(this.double)
+        },
+        toggleFav(book){
+            book.isFav = !book.isFav 
         }
     }
 })
