@@ -17,13 +17,28 @@
     <span v-if='!modalShow'>open Modal</span>
     <span v-if='modalShow'>close Modal</span>
   </button>
+  <!-- Modal 2 -->
+  <teleport to='.hello' v-if='modal2Show'>
+    <Modal2>
+      <h1>I am modal 2.2</h1>
+      <template v-slot:m2>
+        <h1>I am named slot no.2</h1>
+      </template>
+    </Modal2>
+  </teleport>
+  <button @click="toggleM2">
+    <span v-if='!modal2show'>show m2</span>
+    <span v-if='modal2show'>hide m2</span>
+  </button>
+  
   <Test/>
 </template>
 
 <script>  
 // import HelloWorld from './components/HelloWorld.vue'
 import Modal from './components/Modal.vue'
-import Test from './components/Test.vue';
+import Test from './components/Test.vue'
+import Modal2 from './components/Modal2.vue'
 
 export default {
   name: 'App',
@@ -31,7 +46,8 @@ export default {
       return {
         subtitle: "Lets go",
         header:'I am a header',
-        modalShow: false
+        modalShow: false,
+        modal2Show: false,
       };
    },
    methods:{
@@ -43,6 +59,9 @@ export default {
     },
     openModal(){
       this.modalShow = !this.modalShow
+    },
+    toggleM2(){
+      this.modal2Show = !this.modal2Show
     }
    },
    components: {
@@ -50,6 +69,7 @@ export default {
     Modal,
     name:'Test',
     Test,
+    Modal2
    }
   // components: {
   //   HelloWorld
