@@ -6,11 +6,13 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <Modal/>
+  <Test/>
 </template>
 
 <script>  
 // import HelloWorld from './components/HelloWorld.vue'
 import Modal from './components/Modal.vue'
+import Test from './components/Test.vue';
 
 export default {
   name: 'App',
@@ -29,8 +31,9 @@ export default {
    },
    components: {
     name: 'Modal', 
-    Modal 
-
+    Modal,
+    name:'Test',
+    Test,
    }
   // components: {
   //   HelloWorld

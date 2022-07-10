@@ -1,6 +1,8 @@
 <template>
   <div class="backdrop">
-    <div class="modal"></div>
+    <div class="modal">
+      <p>modal</p>
+    </div>
   </div>
 </template>
 <style>
