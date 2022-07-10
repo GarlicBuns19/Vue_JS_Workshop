@@ -5,7 +5,13 @@
 <button @click="handelClick">Click Me</button>
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <Modal/>
+  <div v-show='modalShow'>
+    <Modal :header="header" subtitle="Subtitle" theme="sale"/>
+  </div>
+  <button @click='openModal'>
+    <span v-if='!modalShow'>open Modal</span>
+    <span v-if='modalShow'>close Modal</span>
+  </button>
   <Test/>
 </template>
 
@@ -19,6 +25,8 @@ export default {
    data() {
       return {
         subtitle: "Lets go",
+        header:'I am a header',
+        modalShow: false
       };
    },
    methods:{
@@ -27,6 +35,9 @@ export default {
       this.$refs.name.focus( )
       this.$refs.name.setAttribute('id','input-ref')
       this.$refs.name.classList.add('input-refffff')
+    },
+    openModal(){
+      this.modalShow = !this.modalShow
     }
    },
    components: {
