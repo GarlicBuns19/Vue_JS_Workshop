@@ -6,7 +6,9 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <div v-show='modalShow'>
-    <Modal :header="header" subtitle="Subtitle" theme="sale"/>
+    <Modal :header="header" subtitle="Subtitle" theme="sale">
+      <h1>Slot here</h1>
+    </Modal>
   </div>
   <button @click='openModal'>
     <span v-if='!modalShow'>open Modal</span>

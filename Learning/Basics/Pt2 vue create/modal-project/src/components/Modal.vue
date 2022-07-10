@@ -4,6 +4,7 @@
       <p>modal</p>
       <h1>{{ header }}</h1>
       <h2>{{ subtitle }}</h2>
+      <slot></slot>
     </div>
   </div>
 </template>
