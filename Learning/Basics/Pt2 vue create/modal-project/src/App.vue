@@ -6,8 +6,11 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <div v-show='modalShow'>
-    <Modal :header="header" subtitle="Subtitle" theme="sale">
+    <Modal :header="header" subtitle="Subtitle" theme="sale" @click="openModal">
       <h1>Slot here</h1>
+      <template v-slot:links>
+        <h1>I am a named slot</h1>
+      </template>
     </Modal>
   </div>
   <button @click='openModal'>
